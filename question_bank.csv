@@ -1,0 +1,33 @@
+sno,question,mark,answer,type,choiceA,choiceB,choiceC,choiceD
+1,What is the square root of 16?,1,4,simple,4,8,2,16
+2,What is the capital of France?,1,Paris,simple,London,Paris,Rome,Berlin
+3,What is 5 + 3?,1,8,simple,6,7,8,9
+4,What color is the sky on a clear day?,1,Blue,simple,Green,Blue,Yellow,Red
+5,What is the opposite of "up"?,1,Down,simple,Left,Right,Down,Above
+6,How many sides does a triangle have?,1,3,simple,3,4,5,6
+7,What is 10 - 4?,1,6,simple,5,6,7,8
+8,Which planet is known as the Red Planet?,1,Mars,simple,Earth,Mars,Jupiter,Saturn
+9,What is 2 x 6?,1,12,simple,10,12,14,16
+10,What is H2O commonly known as?,1,Water,simple,Hydrogen,Water,Oxygen,Ice
+11,What is 12 x 12?,2,144,medium,132,144,156,164
+12,Who wrote "Romeo and Juliet"?,2,Shakespeare,medium,Dickens,Shakespeare,Tolkien,Hemingway
+13,What is the capital of Japan?,2,Tokyo,medium,Kyoto,Osaka,Tokyo,Seoul
+14,What is the chemical symbol for Gold?,2,Au,medium,Ag,Au,Fe,Hg
+15,What is 25% of 200?,2,50,medium,25,50,75,100
+16,Who painted the Mona Lisa?,2,Leonardo da Vinci,medium,Van Gogh,Leonardo da Vinci,Picasso,Monet
+17,What is the freezing point of water in Celsius?,2,0,medium,-1,0,1,100
+18,What is the cube root of 27?,2,3,medium,2,3,4,9
+19,What is the largest mammal on Earth?,2,Blue Whale,medium,Elephant,Blue Whale,Shark,Giraffe
+20,What is the value of Pi to two decimal places?,2,3.14,medium,3.13,3.14,3.15,3.16
+21,What is the square root of 225?,3,15,hard,10,12,15,20
+22,Who discovered penicillin?,3,Alexander Fleming,hard,Louis Pasteur,Alexander Fleming,Marie Curie,Isaac Newton
+23,What is the capital of Iceland?,3,Reykjavik,hard,Helsinki,Reykjavik,Oslo,Copenhagen
+24,What is the derivative of x^2?,3,2x,hard,x,2x,1,2
+25,Who developed the theory of relativity?,3,Einstein,hard,Newton,Einstein,Galileo,Bohr
+26,What is the boiling point of water in Fahrenheit?,3,212,hard,200,211,212,214
+27,What is the chemical formula for table salt?,3,NaCl,hard,NaCl,NaOH,KCl,H2O
+28,What is the capital of New Zealand?,3,Wellington,hard,Sydney,Auckland,Wellington,Canberra
+29,What is the longest river in the world?,3,Amazon,hard,Nile,Amazon,Mississippi,Yangtze
+30,What is the square of 13?,3,169,hard,156,169,182,196
+31,What is the hardest natural substance on Earth?,3,Diamond,hard,Gold,Diamond,Iron,Quartz
+32,What is the atomic number of Carbon?,3,6,hard,4,6,8,10

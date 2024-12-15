@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <form method="POST">
+        <label for="username">Enter your name: </label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        {% for question in questions %}
+            <div>
+                <p>{{ question['question'] }}</p>
+                <input type="hidden" name="question_text_{{ question['sno'] }}" value="{{ question['question'] }}">
+                <input type="hidden" name="answer_{{ question['sno'] }}" value="{{ question['answer'] }}">
+
+                {% if question['type'] == 'simple' %}
+                    <label>
+                        <input type="radio" name="question_{{ question['sno'] }}" value="{{ question['choiceA'] }}"> {{ question['choiceA'] }}
+                    </label><br>
+                    <label>
+                        <input type="radio" name="question_{{ question['sno'] }}" value="{{ question['choiceB'] }}"> {{ question['choiceB'] }}
+                    </label><br>
+                    <label>
+                        <input type="radio" name="question_{{ question['sno'] }}" value="{{ question['choiceC'] }}"> {{ question['choiceC'] }}
+                    </label><br>
+                    <label>
+                        <input type="radio" name="question_{{ question['sno'] }}" value="{{ question['choiceD'] }}"> {{ question['choiceD'] }}
+                    </label><br>
+                {% endif %}
+            </div>
+        {% endfor %}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
