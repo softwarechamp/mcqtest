@@ -6,7 +6,6 @@ from datetime import datetime
 app = Flask(__name__)
 app.secret_key = "secret_key"
 
-
 # Function to load questions from the CSV file
 def load_questions():
     questions = []
@@ -71,7 +70,7 @@ def test():
         # Save responses to CSV
         with open("user-responses.csv", "a", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=["sno", "date", "username", "question", "answer", "response"])
-            if f.tell() == 0:  # Write header only if the file is empty
+            if f.tell() == 0:
                 writer.writeheader()
             writer.writerows(responses)
 
@@ -84,6 +83,32 @@ def test():
 @app.route("/result")
 def result():
     return render_template("result.html")
+
+
+@app.route("/quiz_master")
+def quiz_master():
+    # Load responses from user-responses.csv to create a list of test takers
+    test_takers = {}
+    with open("user-responses.csv", "r") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            key = (row["username"], row["date"].split(" ")[0])  # Username and date
+            test_takers[key] = {"name": row["username"], "date": row["date"].split(" ")[0]}
+    
+    return render_template("quiz_master.html", test_takers=test_takers.values())
+
+
+@app.route("/quiz_master/view/<username>/<date>")
+def view_results(username, date):
+    # Load responses for the specific user and date
+    results = []
+    with open("user-responses.csv", "r") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if row["username"] == username and row["date"].startswith(date):
+                results.append(row)
+    
+    return render_template("view_results.html", results=results, username=username, date=date)
 
 
 if __name__ == "__main__":

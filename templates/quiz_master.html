@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Master - Test Takers</title>
+</head>
+<body>
+    <h1>List of Test Takers</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+        {% for test_taker in test_takers %}
+        <tr>
+            <td>{{ test_taker.name }}</td>
+            <td>{{ test_taker.date }}</td>
+            <td>
+                <a href="/quiz_master/view/{{ test_taker.name }}/{{ test_taker.date }}">View Results</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

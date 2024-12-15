@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Master - Results for {{ username }}</title>
+</head>
+<body>
+    <h1>Results for {{ username }} on {{ date }}</h1>
+    <table border="1">
+        <tr>
+            <th>Question</th>
+            <th>Correct Answer</th>
+            <th>Response</th>
+            <th>Status</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result.question }}</td>
+            <td>{{ result.answer }}</td>
+            <td>{{ result.response }}</td>
+            <td>{{ "Correct" if result.answer == result.response else "Incorrect" }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/quiz_master">Back to Test Takers</a>
+</body>
+</html>
