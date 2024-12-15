@@ -8,3 +8,6 @@ sno,date,username,question,answer,response
 13,2024-12-15 14:14:58,Naina,What is the capital of Japan?,Tokyo,Seoul
 30,2024-12-15 14:14:58,Naina,What is the square of 13?,169,169
 29,2024-12-15 14:14:58,Naina,What is the longest river in the world?,Amazon,Nile
+6,2024-12-15 16:17:28,user1,How many sides does a triangle have?,3,5
+14,2024-12-15 16:17:28,user1,What is the chemical symbol for Gold?,Au,Fe
+30,2024-12-15 16:17:28,user1,What is the square of 13?,169,182
