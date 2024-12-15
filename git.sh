@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "more student info and inputs" 
+git commit -m "refine" 
 git push origin main
